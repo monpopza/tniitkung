@@ -34,6 +34,22 @@
     </div>
 </template>
 
+<script>
+    import firebase from 'firebase'
+    //ll
+    export default {
+        name: 'App',
+        beforeCreate () {
+            firebase.initializeApp({
+                apiKey: "AIzaSyBL-uVhmLKM0avLoOWGc-D_ygM66lpFo8A",
+                authDomain: "tniitkung.firebaseapp.com",
+                databaseURL: "https://tniitkung.firebaseio.com",
+                projectId: "tniitkung"
+            })
+        }
+    }
+</script>
+
 <style lang="scss">
     footer p {
         text-align: center;
