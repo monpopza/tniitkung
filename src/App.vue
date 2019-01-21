@@ -46,6 +46,27 @@
                 databaseURL: "https://tniitkung.firebaseio.com",
                 projectId: "tniitkung"
             })
+        },
+        created () {
+            // firebase.firestore().collection('collection').document('bi').get() // get BI information
+            // firebase.firestore().collection('collection').document('bi').collection('room').get() // get all room infos for BI
+            // firebase.firestore().collection('collection').document('bi').collection('room').document('b402').get() // get b402 from BI Room
+            //
+            // firebase.firestore().collection('collection').document('bi').collection('room').document('b402').get().then(doc => {
+            //     console.log(doc.id, doc.data())
+            // })
+            //
+            // firebase.firestore().collection('collection').document('bi').collection('room').get().then(dataSnapshot => {
+            //     dataSnapshot.forEach(doc => {
+            //         console.log(doc.id, doc.data())
+            //     })
+            // })
+            //
+            // firebase.firestore().collection('posts').where('userId', '==', this.$store.state.currentUser.uid).orderBy('timestamp', 'desc').limit(10).get(dataSnapshot => {
+            //     dataSnapshot.forEach(doc => {
+            //         console.log(doc.id, doc.data())
+            //     })
+            // })
         }
     }
 </script>
