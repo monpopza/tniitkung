@@ -10,8 +10,21 @@ export default new Router({
     routes: [
         {
             path: '/',
+            name: 'cover',
+            meta: {
+                noNav: true
+            },
+            component: () => import('./views/addon/cover.vue')
+        },
+        {
+            path: '/home',
             name: 'home',
             component: Home
+        },
+        {
+            path: '/internship',
+            name: 'internship',
+            component: () => import('./views/dat/internship.vue')
         },
         {
             path: '/about',
@@ -19,7 +32,7 @@ export default new Router({
             // route level code-splitting
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+            component: () => import(/* webpackChunkName: "about" */ './views/dat/About.vue')
         },
         {
             path: '/camera',
@@ -27,7 +40,7 @@ export default new Router({
             // route level code-splitting
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import(/* webpackChunkName: "about" */ './views/Camera.vue')
+            component: () => import(/* webpackChunkName: "about" */ './views/addon/Camera.vue')
         },
         {
             path: '/section/:sections',
@@ -51,7 +64,15 @@ export default new Router({
             // route level code-splitting
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import(/* webpackChunkName: "about" */ './views/TNI.vue')
+            component: () => import(/* webpackChunkName: "about" */ './views/dat/TNI.vue')
+        },
+        {
+            path: '/news',
+            name: 'News',
+            // route level code-splitting
+            // this generates a separate chunk (about.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import(/* webpackChunkName: "about" */ './views/dat/news.vue')
         },
         {
             path: '/*',
