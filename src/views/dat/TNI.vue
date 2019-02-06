@@ -6,7 +6,8 @@
         img-top
         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
         tag="article"
-        class="mb-2">
+        class="mb-2"
+    >
         <p class="card-text">
             สถาบันเทคโนโลยีไทย-ญี่ปุ่น 1771/1 ซ.พัฒนาการ 37 ถนนพัฒนาการ แขวงสวนหลวง เขตสวนหลวง กรุงเทพฯ 10250
             Tel. 0-2763-2600 Fax. 0-2763-2700 E-MAIL: TNIINFO@TNI.AC.TH

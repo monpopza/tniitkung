@@ -6,7 +6,9 @@
             <b-card img-src="https://it.tni.ac.th/wp-content/uploads/2018/05/Untitled-4p-01.png"
                     img-top
 
-                    title="ABOUT INFORMANTION TECHNOLOGY" sub-title="ประวัติความเป็นมา ของคณะเทคโนโลยีสารสนเทศ">
+                    title="ABOUT INFORMANTION TECHNOLOGY"
+                    sub-title="ประวัติความเป็นมา ของคณะเทคโนโลยีสารสนเทศ"
+            >
                 <p class="card-text" style="text-indent: 2.5em;">
                     คณะเทคโนโลยีสารสนเทศได้เปิดขึ้นพร้อมกับการก่อตั้งสถาบันเทคโนโลยีไทย–ญี่ปุ่นเมื่อปี พ.ศ. 2550
                     สำนักงานคณะกรรมการการอุดมศึกษาได้อนุมัติการจัดตั้งสถาบันเมื่อวันที่ 29 กันยายน พ.ศ. 2549

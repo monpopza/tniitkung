@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <b-navbar toggleable="md" type="dark" variant="info" v-if="!$route.meta.noNav">
+        <b-navbar toggleable="md" type="light" variant="light" v-if="!$route.meta.noNav">
 
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -11,7 +11,7 @@
                 <b-navbar-nav>
                     <b-nav-item to="/home">Home</b-nav-item>
                     <b-nav-item to="/about">About</b-nav-item>
-                    <b-nav-item to="/program/all">Curriculum</b-nav-item>
+                    <b-nav-item to="/section">Curriculum</b-nav-item>
                     <b-nav-item to="/news">News</b-nav-item>
                 </b-navbar-nav>
 
@@ -44,7 +44,8 @@
                 apiKey: "AIzaSyBL-uVhmLKM0avLoOWGc-D_ygM66lpFo8A",
                 authDomain: "tniitkung.firebaseapp.com",
                 databaseURL: "https://tniitkung.firebaseio.com",
-                projectId: "tniitkung"
+                projectId: "tniitkung",
+                storageBucket: "tniitkung.appspot.com"
             })
         }//,
         //created () {
@@ -77,6 +78,7 @@
         width: 100%;
         overflow: hidden;
     }
+
     footer p {
         text-align: center;
     }

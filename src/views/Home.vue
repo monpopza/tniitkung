@@ -16,7 +16,7 @@
             >
                 <!-- Text slides with image -->
                 <b-carousel-slide caption="IT Kung Present"
-                                  text="Welcome to Faculty of Information Technology, Thai-Nichi Institute of Technology"
+                                  text="Welcome to Faculty of Information Technology"
                                   img-src="https://picsum.photos/1024/480/?image=52"
                 />
                 <!-- Slides with image only -->
@@ -51,6 +51,9 @@
                     <p class="card-text">
                         ความเป็นมาที่เกี่ยวกับคณะเทคโนโลยีสาระสนเทศ.
                     </p>
+                    <footer>
+                        <b-button to="/tni" variant="secondary">Go somewhere</b-button>
+                    </footer>
                 </b-card>
 
                 <b-card title="สาขาและหลักสูตร"
@@ -60,9 +63,12 @@
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
                         tag="article"
                         class="mb-2">
-                    <p class="card-text" to="/program/all">
+                    <p class="card-text">
                         รายละเอียดของสาขาและหลักสูตรของคณะเทคโนโลยีสาระสนเทศทั้งหมด.
                     </p>
+                    <footer>
+                        <b-button to="/section" variant="secondary">Go somewhere</b-button>
+                    </footer>
                 </b-card>
 
                 <b-card title="ข่าวสารและกิจกรรม"
@@ -72,9 +78,12 @@
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
                         tag="article"
                         class="mb-2">
-                    <p class="card-text" to="/news">
+                    <p class="card-text">
                         ข่าวสารและกิจกรรมต่างๆของทางคณะ
                     </p>
+                    <footer>
+                        <b-button to="/news" variant="secondary">Go somewhere</b-button>
+                    </footer>
                 </b-card>
 
                 <b-card title="ทุนแลกเปลี่ยน"
@@ -84,9 +93,13 @@
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
                         tag="article"
                         class="mb-2">
-                    <p class="card-text" to="/internship">
+                    <p class="card-text">
                         ข่าวสารเกี่ยวกับทุนแลกเปลี่ยนการศึกษาต่างๆจากทางคณะ
                     </p>
+                    <footer>
+                        <b-button to="/internship" variant="secondary">Go somewhere</b-button>
+                    </footer>
+                    </footer>
                 </b-card>
             </b-card-group>
         </div>
