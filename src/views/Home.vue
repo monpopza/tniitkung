@@ -15,31 +15,32 @@
 
             >
                 <!-- Text slides with image -->
-                <b-carousel-slide caption="IT Kung Present"
+                <b-carousel-slide
                                   text="Welcome to Faculty of Information Technology"
-                                  img-src="https://picsum.photos/1024/480/?image=52"
+                                  img-src="https://scontent.fbkk8-2.fna.fbcdn.net/v/t31.0-8/26232847_1932490450112989_6803324557161425106_o.jpg?_nc_cat=103&_nc_eui2=AeHNZnSL3tBjWbWEYi42MFW9J3gYYWnyFiLsqLmTobtoNEU5ZGsBiJuiYba3KBuosjjwZO3gWUXk_xNo1N9KSX8IDLcrrAaNVx7qbSqI64WyEQ&_nc_ht=scontent.fbkk8-2.fna&oh=a36ee722ab61e72458e459a73d625c6e&oe=5CF7360A"
                 />
                 <!-- Slides with image only -->
-                <b-carousel-slide caption="IT"
+                <b-carousel-slide to="/section/it"
                                   text="Information Technology Program"
-                                  img-src="https://picsum.photos/1024/480/?image=52"
+                                  img-src="https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/47573899_2429537267116639_4129805664367149056_o.jpg?_nc_cat=107&_nc_eui2=AeHDBsB54PAQvUZdR2w5vqqoI87sGlgrjpslFQcQVOeZ7a5VyWQCKS3I36XulqGnJMTufav9ZUdxgNXYpVMHquXRQ_idWmqqiGV7bILpNeXbZw&_nc_ht=scontent.fbkk8-2.fna&oh=4fca5e7ed6e6b00401e2095ae9e58b6a&oe=5CE72F67"
                 />
-                <b-carousel-slide caption="BI"
+                <b-carousel-slide to="/section/bi"
                                   text="Business Information Technology Program"
-                                  img-src="https://picsum.photos/1024/480/?image=53"
+                                  img-src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/35049843_2026945347567101_873489622364061696_o.jpg?_nc_cat=101&_nc_eui2=AeGLHjUGUOH7_UG7lVaWKGZpd--W9Javech2HJ6bhA8eWWaTgFn9tOITEhMEDeDU_w-S2lKqMUuOhm6JJfY21t6O_qAORmLrGBzT5u0H8uGsag&_nc_ht=scontent.fbkk12-1.fna&oh=c57c0a8c7be10bb32987512494913ac8&oe=5D012AF1"
                 />
-                <b-carousel-slide caption="MT"
+                <b-carousel-slide to="/section/mt"
                                   text="Multimedia Technology Program"
-                                  img-src="https://picsum.photos/1024/480/?image=54"
+                                  img-src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/35227982_2121267341236388_1951043835429650432_n.png?_nc_cat=110&_nc_eui2=AeGEKWm28I2t6eYioGu2FXQsjMdV80Nh4ddsaYhfKW4L--l9zy2NmeeRLWwFmI3A-hc3J2aT9iUStu9FiLg-wDrBA-e-HyTs9OcJhHzlL9oD9Q&_nc_ht=scontent.fbkk12-1.fna&oh=739a828ff54bc065f0e7069c87e29c6c&oe=5D001434"
                 />
-                <b-carousel-slide caption="DC"
+                <b-carousel-slide to="/section/dc"
                                   text="Digital Technology in Mass Communication Program"
-                                  img-src="https://picsum.photos/1024/480/?image=55"
+                                  img-src="https://scontent.fbkk8-3.fna.fbcdn.net/v/t1.0-9/34962753_589825494744181_3040784592995876864_n.jpg?_nc_cat=100&_nc_eui2=AeFJB4_kT8w35xgCb_QrZZzTl3sOcj_AkESUirjYijjryhNRpHoxo10YppYPKvU6QH-2Yg2lU7ERnbzXD5j3-lvcHZjYdX6YgRcx6N7amgBjjw&_nc_ht=scontent.fbkk8-3.fna&oh=17e143c59c40a86e294f8d51461cbac1&oe=5CF5DF0C"
                 />
             </b-carousel>
             <!--card-->
             <b-card-group desk>
                 <b-card title="เกี่ยวกับคณะ"
+                        sub-title="เกี่ยวกับคณะเทคโนโลยีสาระสนเทศ"
                         img-src=""
                         img-alt="aboutme"
                         img-top
@@ -49,15 +50,13 @@
                         to="/about"
                         border-variant="dark"
                 >
-                    <p class="card-text">
-                        ความเป็นมาที่เกี่ยวกับคณะเทคโนโลยีสาระสนเทศ.
-                    </p>
                     <footer>
-                        <b-button to="/tni" variant="outline-dark">Go somewhere</b-button>
+                        <b-button to="/about" variant="outline-dark">Go somewhere</b-button>
                     </footer>
                 </b-card>
 
                 <b-card title="สาขาและหลักสูตร"
+                        sub-title="รายละเอียดของสาขาและหลักสูตรของคณะเทคโนโลยีสาระสนเทศทั้งหมด"
                         img-src=""
                         img-alt="Curriculum"
                         img-top
@@ -66,15 +65,13 @@
                         class="mb-2"
                         border-variant="dark"
                 >
-                    <p class="card-text">
-                        รายละเอียดของสาขาและหลักสูตรของคณะเทคโนโลยีสาระสนเทศทั้งหมด.
-                    </p>
                     <footer>
-                        <b-button to="/section" variant="outline-dark">Go somewhere</b-button>
+                        <b-button to="/sections" variant="outline-dark">Go somewhere</b-button>
                     </footer>
                 </b-card>
 
                 <b-card title="ข่าวสารและกิจกรรม"
+                        sub-title="ข่าวสารและกิจกรรมต่างๆของทางคณะ"
                         img-src=""
                         img-alt="NEWS"
                         img-top
@@ -83,15 +80,13 @@
                         class="mb-2"
                         border-variant="dark"
                 >
-                    <p class="card-text">
-                        ข่าวสารและกิจกรรมต่างๆของทางคณะ
-                    </p>
                     <footer>
                         <b-button to="/news" variant="outline-dark">Go somewhere</b-button>
                     </footer>
                 </b-card>
 
                 <b-card title="ทุนแลกเปลี่ยน"
+                        sub-title="ข่าวสารเกี่ยวกับทุนแลกเปลี่ยนการศึกษาต่างๆจากทางคณะ"
                         img-src=""
                         img-alt="internship"
                         img-top
@@ -100,12 +95,8 @@
                         class="mb-2"
                         border-variant="dark"
                 >
-                    <p class="card-text">
-                        ข่าวสารเกี่ยวกับทุนแลกเปลี่ยนการศึกษาต่างๆจากทางคณะ
-                    </p>
                     <footer>
                         <b-button to="/internship" variant="outline-dark">Go somewhere</b-button>
-                    </footer>
                     </footer>
                 </b-card>
             </b-card-group>

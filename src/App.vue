@@ -11,7 +11,7 @@
                 <b-navbar-nav>
                     <b-nav-item to="/home">Home</b-nav-item>
                     <b-nav-item to="/about">About</b-nav-item>
-                    <b-nav-item to="/section">Curriculum</b-nav-item>
+                    <b-nav-item to="/sections">Curriculum</b-nav-item>
                     <b-nav-item to="/news">News</b-nav-item>
                     <b-nav-item to="/internship">Exchange</b-nav-item>
                 </b-navbar-nav>
@@ -81,5 +81,8 @@
 
     footer p {
         text-align: center;
+    }
+    body{
+        background-color: whitesmoke;
     }
 </style>

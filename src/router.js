@@ -43,8 +43,8 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/addon/Camera.vue')
         },
         {
-            path: '/section',
-            name: 'section',
+            path: '/sections',
+            name: 'sections',
             // route level code-splitting
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
@@ -75,6 +75,26 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/dat/news/news.vue')
         },
         {
+            path: '/section/it',
+            name: 'it',
+            component: () => import('./views/dat/section/it.vue')
+        },
+        {
+            path: '/section/bi',
+            name: 'bi',
+            component: () => import('./views/dat/section/bi.vue')
+        },
+        {
+            path: '/section/mt',
+            name: 'mt',
+            component: () => import('./views/dat/section/mt.vue')
+        },
+        {
+            path: '/section/dc',
+            name: 'dc',
+            component: () => import('./views/dat/section/dc.vue')
+        },
+        {
             path: '/*',
             name: 'Not Found',
             // route level code-splitting
@@ -95,8 +115,3 @@ export default new Router({
             // which is lazy-loaded when the route is visited.
 //            component: () => import(/* webpackChunkName: "about" */ //'./views/listing.vue')
 //,
-//         {
-//             path:'/section/:section',
-//             name:':section',
-//             component:() => import('./views/dat/section/:section')
-//         }}

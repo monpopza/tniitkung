@@ -19,8 +19,8 @@
                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.673940320907!2d100.62602595146983!3d13.738179990308968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d61d1a422f1e1%3A0xec8b5f1d5edf5da!2sThai-Nichi+Institute+of+Technology!5e0!3m2!1sen!2sth!4v1516332092942"
         />
         <footer>
-            <b-button variant="outline-dark" href="it.tni.ac.th">
-                Go to Website
+            <b-button variant="outline-dark" href="https://it.tni.ac.th">
+                Website
             </b-button>
         </footer>
 
