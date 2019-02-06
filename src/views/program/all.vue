@@ -5,7 +5,9 @@
                     header-tag="header"
                     footer="Card Footer"
                     footer-tag="footer"
-                    title="Title">
+                    title="Title"
+                    border-variant="dark"
+            >
                 <p class="card-text">Header and footers using props.</p>
                 <b-button href="#"
                           variant="primary">Go somewhere</b-button>

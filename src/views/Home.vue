@@ -47,6 +47,7 @@
                         tag="article"
                         class="mb-2"
                         to="/about"
+                        border-variant="dark"
                 >
                     <p class="card-text">
                         ความเป็นมาที่เกี่ยวกับคณะเทคโนโลยีสาระสนเทศ.
@@ -62,7 +63,9 @@
                         img-top
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
                         tag="article"
-                        class="mb-2">
+                        class="mb-2"
+                        border-variant="dark"
+                >
                     <p class="card-text">
                         รายละเอียดของสาขาและหลักสูตรของคณะเทคโนโลยีสาระสนเทศทั้งหมด.
                     </p>
@@ -77,7 +80,9 @@
                         img-top
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
                         tag="article"
-                        class="mb-2">
+                        class="mb-2"
+                        border-variant="dark"
+                >
                     <p class="card-text">
                         ข่าวสารและกิจกรรมต่างๆของทางคณะ
                     </p>
@@ -92,7 +97,9 @@
                         img-top
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
                         tag="article"
-                        class="mb-2">
+                        class="mb-2"
+                        border-variant="dark"
+                >
                     <p class="card-text">
                         ข่าวสารเกี่ยวกับทุนแลกเปลี่ยนการศึกษาต่างๆจากทางคณะ
                     </p>

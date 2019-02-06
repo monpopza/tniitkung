@@ -8,6 +8,7 @@
             style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
             tag="article"
             class="mb-2"
+            border-variant="dark"
         >
             <footer>
                 <b-button to="/news/temp/1" variant="outline-dark">Go somewhere</b-button>
@@ -22,6 +23,7 @@
             style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
             tag="article"
             class="mb-2"
+            border-variant="dark"
         >
             <footer>
                 <b-button to="/news/temp/1" variant="outline-dark">Go somewhere</b-button>
@@ -36,6 +38,7 @@
             style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
             tag="article"
             class="mb-2"
+            border-variant="dark"
         >
             <footer>
                 <b-button to="/news/temp/1" variant="outline-dark">Go somewhere</b-button>
