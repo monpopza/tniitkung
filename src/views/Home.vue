@@ -52,7 +52,7 @@
                         ความเป็นมาที่เกี่ยวกับคณะเทคโนโลยีสาระสนเทศ.
                     </p>
                     <footer>
-                        <b-button to="/tni" variant="secondary">Go somewhere</b-button>
+                        <b-button to="/tni" variant="outline-dark">Go somewhere</b-button>
                     </footer>
                 </b-card>
 
@@ -67,7 +67,7 @@
                         รายละเอียดของสาขาและหลักสูตรของคณะเทคโนโลยีสาระสนเทศทั้งหมด.
                     </p>
                     <footer>
-                        <b-button to="/section" variant="secondary">Go somewhere</b-button>
+                        <b-button to="/section" variant="outline-dark">Go somewhere</b-button>
                     </footer>
                 </b-card>
 
@@ -82,7 +82,7 @@
                         ข่าวสารและกิจกรรมต่างๆของทางคณะ
                     </p>
                     <footer>
-                        <b-button to="/news" variant="secondary">Go somewhere</b-button>
+                        <b-button to="/news" variant="outline-dark">Go somewhere</b-button>
                     </footer>
                 </b-card>
 
@@ -97,7 +97,7 @@
                         ข่าวสารเกี่ยวกับทุนแลกเปลี่ยนการศึกษาต่างๆจากทางคณะ
                     </p>
                     <footer>
-                        <b-button to="/internship" variant="secondary">Go somewhere</b-button>
+                        <b-button to="/internship" variant="outline-dark">Go somewhere</b-button>
                     </footer>
                     </footer>
                 </b-card>

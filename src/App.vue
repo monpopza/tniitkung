@@ -13,6 +13,7 @@
                     <b-nav-item to="/about">About</b-nav-item>
                     <b-nav-item to="/section">Curriculum</b-nav-item>
                     <b-nav-item to="/news">News</b-nav-item>
+                    <b-nav-item to="/internship">Exchange</b-nav-item>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
@@ -44,8 +45,7 @@
                 apiKey: "AIzaSyBL-uVhmLKM0avLoOWGc-D_ygM66lpFo8A",
                 authDomain: "tniitkung.firebaseapp.com",
                 databaseURL: "https://tniitkung.firebaseio.com",
-                projectId: "tniitkung",
-                storageBucket: "tniitkung.appspot.com"
+                projectId: "tniitkung"
             })
         }//,
         //created () {

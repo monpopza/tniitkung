@@ -16,7 +16,7 @@
                     INFORMATION TECHNOLOGY
                 </p>
                 <footer>
-                    <b-button to="/section/#" variant="secondary">Go somewhere</b-button>
+                    <b-button to="/section/#" variant="light">Go somewhere</b-button>
                 </footer>
             </b-card>
 
@@ -34,7 +34,7 @@
                     BUSINESS INFORMATION TECHNOLOGY
                 </p>
                 <footer>
-                    <b-button to="/section/#" variant="secondary">Go somewhere</b-button>
+                    <b-button to="/section/#" variant="light">Go somewhere</b-button>
                 </footer>
             </b-card>
 
@@ -52,7 +52,7 @@
                     MULTIMEDIA TECHNOLOGY
                 </p>
                 <footer>
-                    <b-button to="/section/#" variant="secondary" >Go somewhere</b-button>
+                    <b-button to="/section/#" variant="light" >Go somewhere</b-button>
                 </footer>
             </b-card>
 
@@ -70,7 +70,7 @@
                     DIGITAL TECHNOLOGY IN MASS COMMUNICATION
                 </p>
                 <footer>
-                    <b-button to="/section/#" variant="secondary">Go somewhere</b-button>
+                    <b-button to="/section/#" variant="light">Go somewhere</b-button>
                 </footer>
             </b-card>
         </b-card-group>
