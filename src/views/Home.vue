@@ -51,7 +51,7 @@
                         border-variant="dark"
                 >
                     <footer>
-                        <b-button to="/about" variant="outline-dark">Go somewhere</b-button>
+                        <b-button to="/about" variant="outline-dark">อ่านต่อ</b-button>
                     </footer>
                 </b-card>
 
@@ -66,7 +66,7 @@
                         border-variant="dark"
                 >
                     <footer>
-                        <b-button to="/sections" variant="outline-dark">Go somewhere</b-button>
+                        <b-button to="/sections" variant="outline-dark">อ่านต่อ</b-button>
                     </footer>
                 </b-card>
 
@@ -81,7 +81,7 @@
                         border-variant="dark"
                 >
                     <footer>
-                        <b-button to="/news" variant="outline-dark">Go somewhere</b-button>
+                        <b-button to="/news" variant="outline-dark">อ่านต่อ</b-button>
                     </footer>
                 </b-card>
 
@@ -96,7 +96,7 @@
                         border-variant="dark"
                 >
                     <footer>
-                        <b-button to="/internship" variant="outline-dark">Go somewhere</b-button>
+                        <b-button to="/internship" variant="outline-dark">อ่านต่อ</b-button>
                     </footer>
                 </b-card>
             </b-card-group>

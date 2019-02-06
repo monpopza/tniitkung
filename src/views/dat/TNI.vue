@@ -3,7 +3,7 @@
         title="THAI-NICHI INSTITUTE OF TECHNOLOGY"
         img-src="https://www.tni.ac.th/tni2016/images/themes/pc/tni.png"
         img-alt="Image"
-        img-top
+        img-bottom
         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
         tag="article"
         class="mb-2"
