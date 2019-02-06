@@ -83,6 +83,6 @@
         text-align: center;
     }
     body{
-        background-color: whitesmoke;
+        background-color: #fffdff;
     }
 </style>
