@@ -1,8 +1,10 @@
 <template>
     <div id="cover">
-        <b-img src="https://scontent.fbkk8-2.fna.fbcdn.net/v/t31.0-8/26232847_1932490450112989_6803324557161425106_o.jpg?_nc_cat=103&_nc_eui2=AeHNZnSL3tBjWbWEYi42MFW9J3gYYWnyFiLsqLmTobtoNEU5ZGsBiJuiYba3KBuosjjwZO3gWUXk_xNo1N9KSX8IDLcrrAaNVx7qbSqI64WyEQ&_nc_ht=scontent.fbkk8-2.fna&oh=a36ee722ab61e72458e459a73d625c6e&oe=5CF7360A" style="width: 100%;"/>
+        <b-img
+            src="https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/22406310_194532097757913_6072644510784826025_n.png?_nc_cat=108&_nc_eui2=AeFgUWB5I-7g-7PmGoSqnqz_tYkljvvl0JErHqh4iw9IasN-dkdqFYuEWrSW1iI_PRMm15bgsMFS0cRxOUaOBap43wDcajjN_-LEoFkLur4FUeZ1oGBhvwKRIAuFIIFpvNE&_nc_ht=scontent.fbkk3-2.fna&oh=f7d5305df1a307187e75789afb03be7e&oe=5CB6A133"
+            style="width: 100%;margin-bottom:2rem;"/>
         <br/>
-        <b-button to="/camera" variant="primary">Camera</b-button>
+        <b-button to="/camera" variant="primary">จิ้มเพื่อแสกน QR Code</b-button>
     </div>
 </template>
 
