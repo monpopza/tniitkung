@@ -38,7 +38,7 @@
                 </footer>
             </b-card>
 
-            <b-card title="สาขาวิชาเทคโนโลยีสารสนเทศมัลติมีเดีย"
+                <b-card title="สาขาวิชาเทคโนโลยีสารสนเทศมัลติมีเดีย"
                     img-src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/35227982_2121267341236388_1951043835429650432_n.png?_nc_cat=110&_nc_eui2=AeGEKWm28I2t6eYioGu2FXQsjMdV80Nh4ddsaYhfKW4L--l9zy2NmeeRLWwFmI3A-hc3J2aT9iUStu9FiLg-wDrBA-e-HyTs9OcJhHzlL9oD9Q&_nc_ht=scontent.fbkk12-1.fna&oh=739a828ff54bc065f0e7069c87e29c6c&oe=5D001434"
                     img-alt="mt"
                     img-top
@@ -67,7 +67,7 @@
                     text-variant="white"
             >
                 <p class="card-text">
-                    Digital Technology in Mass Communication
+                        Digital Technology in Mass Communication
                 </p>
                 <footer>
                     <b-button to="/section/dc" variant="light">สนใจสาขานี้ใช่ไหมฮะ</b-button>
