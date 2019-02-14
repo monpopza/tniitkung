@@ -52,13 +52,14 @@
     export default {
         name: "template",
         data() {
-            sectionInfo: null
+            return {
+                sectionInfo: null
+            }
         },
         created() {
-            firebase.firestore().collection('collection').document(this.$route.params.sectionId).collection.document(this.$route.params.about).get().then(
-                doc => {
+            firebase.firestore().collection('collection').document(this.$route.params.sectionId).collection.document(this.$route.params.about).get().then(doc => {
                 this.sectionInfo = doc.data()
-            }
+            })
         }
     }
 </script>
