@@ -2,7 +2,7 @@
     <div class="home">
         <div class="homed">
             <b-carousel id="carousel1"
-                        style="text-shadow: 1px 1px 2px #333; max-width: 50rem;"
+                        style="text-shadow: 1px 1px 2px #333; max-width: 100vw;"
                         controls
                         indicators
                         background="#ababab"
@@ -41,7 +41,7 @@
             <b-card-group desk>
                 <b-card title="เกี่ยวกับคณะ"
                         sub-title="เกี่ยวกับคณะเทคโนโลยีสาระสนเทศ"
-                        img-src=""
+                        img-src="/pic/facit.png"
                         img-alt="aboutme"
                         img-top
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
@@ -57,7 +57,7 @@
 
                 <b-card title="สาขาและหลักสูตร"
                         sub-title="รายละเอียดของสาขาและหลักสูตรของคณะเทคโนโลยีสาระสนเทศทั้งหมด"
-                        img-src=""
+                        img-src="/pic/curr.png"
                         img-alt="Curriculum"
                         img-top
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
@@ -72,7 +72,7 @@
 
                 <b-card title="ข่าวสารและกิจกรรม"
                         sub-title="ข่าวสารและกิจกรรมต่างๆของทางคณะ"
-                        img-src=""
+                        img-src="/pic/news.png"
                         img-alt="NEWS"
                         img-top
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
@@ -87,7 +87,7 @@
 
                 <b-card title="ทุนแลกเปลี่ยน"
                         sub-title="ข่าวสารเกี่ยวกับทุนแลกเปลี่ยนการศึกษาต่างๆจากทางคณะ"
-                        img-src=""
+                        img-src="/pic/sco.png"
                         img-alt="internship"
                         img-top
                         style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"

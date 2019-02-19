@@ -8,7 +8,6 @@
             <b-progress :value="value" :max="max" class="mb-3"/>
             <p>We will redirect to Homepage</p>
         </template>
-
     </b-jumbotron>
 </template>
 <!--Countdown to Redirect-->

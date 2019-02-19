@@ -1,16 +1,21 @@
 <template>
     <div id="cover">
         <b-img
-            src="https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.0-9/22406310_194532097757913_6072644510784826025_n.png?_nc_cat=108&_nc_eui2=AeFgUWB5I-7g-7PmGoSqnqz_tYkljvvl0JErHqh4iw9IasN-dkdqFYuEWrSW1iI_PRMm15bgsMFS0cRxOUaOBap43wDcajjN_-LEoFkLur4FUeZ1oGBhvwKRIAuFIIFpvNE&_nc_ht=scontent.fbkk3-2.fna&oh=f7d5305df1a307187e75789afb03be7e&oe=5CB6A133"
-            style="width: 100%;margin-bottom:2rem;"/>
+            src="/pic/cover.png"
+            style="width: 50vw;margin-bottom:2rem;"/>
         <br/>
-        <b-button to="/camera" variant="primary">จิ้มเพื่อแสกน QR Code</b-button>
+        <p style="text-align: center;color: #2e2f7d;font-size: 1.5rem;font-weight: bold">คณะเทคโนโลยีสารสนเทศ<br/>สถาบันเทคโนโลยีไทย-ญี่ปุ่น</p>
     </div>
 </template>
 
 <script>
     export default {
-        name: "cover"
+        name: 'cover',
+       created() {
+           setTimeout(() => {
+               this.$router.push('/home')
+           }, 3000)
+       }
     }
 </script>
 
