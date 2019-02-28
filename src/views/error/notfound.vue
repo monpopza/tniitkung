@@ -16,8 +16,8 @@
         name: 'notfound',
         data () {
             return {
-                max: 3,
-                value: 4
+                max: 2,
+                value: 3
             }
         },
         created () {
@@ -28,7 +28,7 @@
                 this.value = this.value - 1;
                 if (this.value < 0) {
                     // Chnage your redirection link here
-                    this.$router.push('/')
+                    this.$router.push('/home')
                 } else {
                     // Count down using javascript
                     window.setTimeout(this.countdown, 1000);

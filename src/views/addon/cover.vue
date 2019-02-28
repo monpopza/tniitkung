@@ -21,7 +21,7 @@
 
 <style scoped>
     #cover {
-        width: 80%;
+        width: 80vw;
         margin: 0 auto;
         position: absolute;
         top: 50%;
