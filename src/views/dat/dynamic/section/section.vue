@@ -13,7 +13,7 @@
             text-variant="white"
         >
             <footer>
-                <b-button :to="`/section/${$route.params.sectionID}`" variant="light">สนใจสาขานี้ใช่ไหม</b-button>
+                <b-button :to="`/sections/${$route.params.sectionID}`" variant="light">สนใจสาขานี้ใช่ไหม</b-button>
             </footer>
         </b-card>
     </b-card-group>
