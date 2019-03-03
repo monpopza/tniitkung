@@ -39,12 +39,12 @@ export default new Router({
         {
             path: '/sections',
             name: 'selection',
-            component: () => import('./views/dat/dynamic/section/selection.vue')
+            component: () => import('./views/dat/dynamic/section/section.vue')
         },
         {
             path: '/sections/:sectionID',
             name: 'sectionID',
-            component: () => import('./views/dat/dynamic/section/sections.vue')
+            component: () => import('./views/dat/dynamic/section/detail.vue')
         },
         {
             path: '/news',

@@ -1,29 +1,29 @@
 <template>
-    <b-card-group v-if="sectionInfo">
-        <b-card :title="`sectionInfo.title`"
-                :sub-title="`sectionInfo['sub-title']`"
-                :img-src="`sectionInfo['img-src']}`"
+    <b-card-group v-if="aboutID">
+        <b-card :title="`aboutID.title`"
+                :sub-title="`aboutID['sub-title']`"
+                :img-src="`aboutID['img-src']}`"
                 img-top
-                :border-variant="`sectionInfo.variant`"
+                :border-variant="`aboutID.variant`"
                 class="mb-2"
         >
             <b-list-group flush>
                 <b-list-group-item>
                     <b-embed type="iframe"
                              aspect="16by9"
-                             :src="`sectionInfo['youtube-src']}`"
+                             :src="`aboutID['youtube-src']}`"
                     />
                     <p class="card-text" style="text-align: center;font-style: italic">วีดีโอแนะนำของสาขานี้ฮะ</p>
                 </b-list-group-item>
                 <b-list-group-item>
                     <b-button variant="outline-dark"
-                              :href="`sectionInfo.web`"
+                              :href="`aboutID.web`"
                     >
                         หน้าเว็ปไซต์หลัก
                     </b-button>
                     |
                     <b-button variant="outline-dark"
-                              :href="`sectionInfo.pdf`"
+                              :href="`aboutID.pdf`"
                     >
                         หลักสูตร
                     </b-button>
@@ -31,7 +31,7 @@
                 <b-list-group-item>
                     <p class="card-text">Social Media</p>
                     <b-button variant="primary"
-                              :href="`sectionInfo.fb`"
+                              :href="`aboutID.fb`"
                     >
                         Facebook
                     </b-button>
@@ -53,12 +53,12 @@
         name: "template",
         data() {
             return {
-                sectionInfo: null
+                aboutID: null
             }
         },
         created() {
-            firebase.firestore().collection('collection').document(this.$route.params.sectionId).collection.document(this.$route.params.about).get().then(doc => {
-                this.sectionInfo = doc.data()
+            firebase.firestore().collection('collection').document(this.$route.params.sectionID).collection('article').document('about').get().then(doc => {
+                this.aboutID = doc.data()
             })
         }
     }

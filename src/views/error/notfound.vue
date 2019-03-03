@@ -6,7 +6,7 @@
         <template slot="lead">
             <p>The page you requested cannot be found or the page you're looking for is no longer available.</p>
             <b-progress :value="value" :max="max" class="mb-3"/>
-            <p>We will redirect to Homepage</p>
+            <p>We will be redirect to Homepage</p>
         </template>
     </b-jumbotron>
 </template>
