@@ -1,45 +1,50 @@
 <template>
-    <b-card-group v-if="aboutID">
-        <b-card :title="`aboutID.title`"
-                :sub-title="`aboutID['sub-title']`"
-                :img-src="`aboutID['img-src']}`"
+    <b-card-group v-if="about">
+        <b-card :title="about.title"
+                :sub-title="about['sub-title']"
+                :img-src="about['img-src']"
                 img-top
-                :border-variant="`aboutID.variant`"
+                :border-variant="about.variant"
                 class="mb-2"
+
         >
             <b-list-group flush>
                 <b-list-group-item>
                     <b-embed type="iframe"
                              aspect="16by9"
-                             :src="`aboutID['youtube-src']}`"
+                             :src="about['youtube-src']"
                     />
-                    <p class="card-text" style="text-align: center;font-style: italic">วีดีโอแนะนำของสาขานี้ฮะ</p>
+                    <b-card-text style="text-align: center;font-style: italic">วีดีโอแนะนำของสาขานี้</b-card-text>
+                </b-list-group-item>
+                <b-list-group-item>
+                    <b-card-text>{{about.description}}</b-card-text>
                 </b-list-group-item>
                 <b-list-group-item>
                     <b-button variant="outline-dark"
-                              :href="`aboutID.web`"
+                              :href="about.web"
                     >
                         หน้าเว็ปไซต์หลัก
                     </b-button>
                     |
                     <b-button variant="outline-dark"
-                              :href="`aboutID.pdf`"
+                              :href="about.pdf"
                     >
                         หลักสูตร
                     </b-button>
                 </b-list-group-item>
                 <b-list-group-item>
-                    <p class="card-text">Social Media</p>
-                    <b-button variant="primary"
-                              :href="`aboutID.fb`"
-                    >
-                        Facebook
-                    </b-button>
-                    |
-                    <b-button variant="danger"
-                              href="https://www.youtube.com/channel/UCOMVmuT0gRQxBGAFBDgqBLg">
-                        Youtube
-                    </b-button>
+                    <b-card-text>Social Media<br>
+                        <b-button variant="primary"
+                                  :href="about.fb"
+                        >
+                            Facebook
+                        </b-button>
+                        |
+                        <b-button variant="danger"
+                                  href="https://www.youtube.com/channel/UCOMVmuT0gRQxBGAFBDgqBLg">
+                            Youtube
+                        </b-button>
+                    </b-card-text>
                 </b-list-group-item>
             </b-list-group>
         </b-card>
@@ -47,21 +52,21 @@
 </template>
 
 <script>
-    import firebase from 'firebase'
+  import Firebase from '@/Firebase'
 
-    export default {
-        name: "template",
-        data() {
-            return {
-                aboutID: null
-            }
-        },
-        created() {
-            firebase.firestore().collection('collection').document(this.$route.params.sectionID).collection('article').document('about').get().then(doc => {
-                this.aboutID = doc.data()
-            })
-        }
+  export default {
+    name: 'detail',
+    data () {
+      return {
+        about: null
+      }
+    },
+    created () {
+      Firebase.firestore().collection('collection').doc(this.$route.params.sectionID).collection('article').doc('about').get().then(doc => {
+        this.about = doc.data()
+      })
     }
+  }
 </script>
 
 <style scoped>

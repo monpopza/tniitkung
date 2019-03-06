@@ -38,7 +38,7 @@
                 />
             </b-carousel>
             <!--card-->
-            <b-card-group desk>
+            <b-card-group deck>
                 <b-card title="เกี่ยวกับคณะ"
                         sub-title="เกี่ยวกับคณะเทคโนโลยีสาระสนเทศ"
                         img-src="/pic/facit.png"
@@ -96,7 +96,7 @@
                         border-variant="dark"
                 >
                     <footer>
-                        <b-button to="/internship" variant="outline-dark">อ่านต่อ</b-button>
+                        <b-button to="/exchange" variant="outline-dark">อ่านต่อ</b-button>
                     </footer>
                 </b-card>
             </b-card-group>

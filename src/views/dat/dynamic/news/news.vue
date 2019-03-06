@@ -1,34 +1,45 @@
 <template>
-    <b-card-group v-if="newsID" desk>
+    <b-card-group deck>
         <b-card
-            :title="`newsID.title`"
-            :img-src="`newsID.img`"
-            :img-alt="`newsID['img-alt']`"
+            v-for="(newsd, index) in newsID"
+            :key="`news_${index}`"
+            :title="newsd.name"
+            :sub-title="newsd.date"
+            :img-src="newsd.pic"
             img-top
             style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
-            :tag="`newsID['img-alt']`"
+            tag="article"
             class="mb-2"
             border-variant="dark"
         >
             <footer>
-                <b-button :to="`/exchange/${$route.params.newsID}`" variant="outline-dark">อ่านต่อ</b-button>
+                <b-button :to="`/news/${newsd.key}`" variant="dark">อ่านต่อ...</b-button>
             </footer>
         </b-card>
     </b-card-group>
 </template>
 
 <script>
+    import Firebase from '@/Firebase'
+
     export default {
         name: 'news',
         data () {
             return {
-                newsID: null
+                newsID: []
             }
         },
         created () {
-            firebase.firestore().collection('collection').document(this.$route.params.newsID).get().then(doc => {
-                this.newsID = doc.data()
+            let arr = []
+
+            Firebase.firestore().collection('data').doc('news').collection('news').get().then(list => {
+                list.forEach(doc => arr.push({
+                    ...doc.data(),
+                    key: doc.id
+                }))
             })
+
+            this.newsID = arr
         }
     }
 </script>

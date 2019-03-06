@@ -7,14 +7,19 @@ module.exports = {
         'plugin:vue/essential',
         '@vue/standard'
     ],
-    plugins: [
-        'html'
-    ],
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'indent': ['error', 4, {'SwitchCase': 1}]
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
     },
+    overrides: [
+        {
+            "files": ["*.vue"],
+            "rules": {
+                "indent": "off",
+                "vue/script-indent": ["error", 4, { "baseIndent": 1 }]
+            }
+        }
+    ],
     parserOptions: {
         parser: 'babel-eslint'
     }

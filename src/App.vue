@@ -13,19 +13,10 @@
                     <b-nav-item to="/about">About</b-nav-item>
                     <b-nav-item to="/sections">Curriculum</b-nav-item>
                     <b-nav-item to="/news">News</b-nav-item>
-                    <b-nav-item to="/internship">Exchange</b-nav-item>
-                </b-navbar-nav>
-
-                <!-- Right aligned nav items -->
-                <b-navbar-nav class="ml-auto">
-                    <b-nav-item to="/tni">Thai-Nichi Institute of Technology</b-nav-item>
-                    <!-- Using button-content slot -->
+                    <b-nav-item to="/exchange">Exchange</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
-
-        <!-- navbar-1.vue -->
-
         <div style="max-width: 50rem; margin: 0 auto;">
             <router-view/>
         </div>
@@ -36,12 +27,11 @@
 </template>
 
 <script>
-    import firebase from 'firebase'
-
+    import Firebase from '@/Firebase'
     export default {
         name: 'App',
         beforeCreate() {
-            firebase.initializeApp({
+            Firebase.initializeApp({
                 apiKey: "AIzaSyBL-uVhmLKM0avLoOWGc-D_ygM66lpFo8A",
                 authDomain: "tniitkung.firebaseapp.com",
                 databaseURL: "https://tniitkung.firebaseio.com",

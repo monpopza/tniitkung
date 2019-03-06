@@ -1,36 +1,47 @@
 <template>
-    <b-card-group v-if="exchangeID" desk>
+    <b-card-group deck>
         <b-card
-            :title="`exchangeID.title`"
-            :img-src="`exchangeID.img`"
-            :img-alt="`exchangeID['img-alt']`"
-            img-top
-            style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
-            :tag="`exchangeID['img-alt']`"
-            class="mb-2"
-            border-variant="dark"
+                v-for="(detail, index) in exchangeID"
+                :key="`detail${index}`"
+                :title="detail.name"
+                :sub-title="detail.date"
+                :img-src="detail.pic"
+                img-top
+                style="margin:1rem 0.25rem 0.25rem; max-width: 50rem;"
+                tag="article"
+                class="mb-2"
+                border-variant="dark"
         >
             <footer>
-                <b-button :to="`/exchange/${$route.params.exchangeID}`" variant="outline-dark">อ่านต่อ</b-button>
+                <b-button :to="`/exchange/${detail.key}`" variant="dark">อ่านต่อ...</b-button>
             </footer>
         </b-card>
     </b-card-group>
 </template>
 
 <script>
-    export default {
-        name: 'exchange',
-        data () {
-            return {
-                exchangeID: null
-            }
-        },
-        created () {
-            firebase.firestore().collection('collection').document(this.$route.params.exchangeID).get().then(doc => {
-                this.exchangeID = doc.data()
-            })
-        }
+  import Firebase from '@/Firebase'
+
+  export default {
+    name: 'exchange',
+    data () {
+      return {
+        exchangeID: []
+      }
+    },
+    created () {
+      let arr = []
+
+      Firebase.firestore().collection('data').doc('exchange').collection('exchange').get().then(list => {
+        list.forEach(doc => arr.push({
+          ...doc.data(),
+          key: doc.id
+        }))
+      })
+
+      this.exchangeID = arr
     }
+  }
 </script>
 
 <style scoped>
