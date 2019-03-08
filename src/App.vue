@@ -21,7 +21,7 @@
             <router-view/>
         </div>
         <footer v-if="!$route.meta.noNav">
-            <p>2018 TNI-アイテークン</p>
+            <p>©COPYRIGHT2019 - TNI ITKung</p>
         </footer>
     </div>
 </template>

@@ -6,6 +6,7 @@
                 img-top
                 class="mb-2"
         >
+            <b-img :src="about.img"/>
             <b-card-text v-html="about.des"/>
         </b-card>
     </b-card-group>

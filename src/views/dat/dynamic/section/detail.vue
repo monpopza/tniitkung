@@ -21,19 +21,19 @@
                 </b-list-group-item>
                 <b-list-group-item>
                     <b-button variant="outline-dark"
-                              :href="about.web"
-                    >
-                        หน้าเว็ปไซต์หลัก
-                    </b-button>
-                    |
-                    <b-button variant="outline-dark"
                               :href="about.pdf"
                     >
-                        หลักสูตร
+                        หลักสูตรของสาขา
                     </b-button>
                 </b-list-group-item>
                 <b-list-group-item>
-                    <b-card-text>Social Media<br>
+                    <b-card-text>Website และ Social Media<br><br>
+                        <b-button variant="success"
+                                  :href="about.web"
+                        >
+                            Website
+                        </b-button>
+                        |
                         <b-button variant="primary"
                                   :href="about.fb"
                         >
