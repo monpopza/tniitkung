@@ -6,7 +6,6 @@
                 img-top
                 class="mb-2"
         >
-            <b-img :src="about.img"/>
             <b-card-text v-html="about.des"/>
         </b-card>
     </b-card-group>
@@ -38,7 +37,7 @@
 
 <style scoped>
     img {
-        width: 100%;
+        width: 80vw;
         margin: auto;
     }
 </style>

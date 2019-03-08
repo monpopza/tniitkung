@@ -14,7 +14,7 @@
        created() {
            setTimeout(() => {
                this.$router.push('/home')
-           }, 3000)
+           }, 3500)
        }
     }
 </script>
