@@ -15,7 +15,7 @@ Vue.use(VueQrcodeReader)
 Vue.use(Card)
 Vue.use(BootstrapVue)
 new Vue({
-    router,
-    store,
-    render: h => h(App)
+  router,
+  store,
+  render: h => h(App)
 }).$mount('#app')

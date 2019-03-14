@@ -12,6 +12,7 @@
             <b-embed type="iframe"
                      aspect="16by9"
                      :src="about.iframe"
+                     v-if="about.iframe"
             />
             <p style="text-align: center;color:gray;font-style: italic;">{{about.siframe}}</p>
             <br><br>

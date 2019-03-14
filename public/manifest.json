@@ -1,6 +1,6 @@
 {
   "short_name": "itkung",
-  "name": "TNI-ITKUNG",
+  "name": "IT Kung",
   "icons": [
     {
       "src": "./img/windows10/Square71x71Logo.scale-400.png",
@@ -518,7 +518,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fffdff",
   "theme_color": "#265bd5"

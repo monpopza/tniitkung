@@ -6,7 +6,14 @@
                 img-top
                 class="mb-2"
         >
-            <b-card-text v-html="about.des"/>
+            <b-card-text v-html="about.header" v-if="about.header"/><br>
+            <b-img v-if="about.bimg" v-for="(item, idx) in about.bimg" :key="`pic_${idx}`" :src="item"/><br>
+            <b-card-text v-if="about.footer" v-html="about.footer"/><br>
+            <b-embed v-if="about.iframe"
+                     type="iframe"
+                     aspect="16by9"
+                     :src="about.iframe"
+            />
         </b-card>
     </b-card-group>
 </template>
