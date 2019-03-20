@@ -10,7 +10,8 @@
         >
             <b-list-group flush>
                 <b-list-group-item>
-                    <b-embed type="iframe"
+                    <b-embed v-if="about['youtube-src']"
+                             type="iframe"
                              aspect="16by9"
                              :src="about['youtube-src']"
                     />
@@ -27,7 +28,7 @@
                     </b-button>
                 </b-list-group-item>
                 <b-list-group-item>
-                    <b-card-text>Website และ Social Media<br><br>
+                    <b-card-text>ช่องทางข่าวสารและช่องทางติดต่อ<br><br>
                         <b-button variant="success"
                                   :href="about.web"
                         >
